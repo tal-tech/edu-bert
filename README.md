@@ -71,6 +71,7 @@ TAL-EduBERT所采用的预训练语料，主要源于好未来内部积淀的海
 与Google发布的原生BERT使用方式一致，支持transformers包，因此在使用时，直接进行模型路径替换即可。
 
 ### 3.使用案例：
+```
 from transformers import BertTokenizer, BertModel
 import torch
 
@@ -83,16 +84,16 @@ sentence = "让我们来看一下这道题，这个题的也是一种比较经�
 inputs = tokenizer(sentence, return_tensors="pt")
 outputs = model(**inputs)
 last_hidden_states = outputs.last_hidden_state
-
+```
 ## 五、 小结
 为了证明TAL-EduBERT在教育领域下游任务的优势，我们从教育场景中的四类业务问题和数据入手进行了对比实验，对比Google BERT Base和Roberta这两种通用领域的预训练模型可知，TAL-EduBERT效果显著提升，在F1上最高提升大约3个百分点。因此，想要在教育领域进行NLP相关方向探索的技术伙伴可以直接使用TAL-EduBERT开展更专业地教育技术实践训练。
 
 本文介绍了 TAL-EduBERT 的开源背景、数据背景、对比实验结果。后续，好未来AI中台也会持续进行理论创新和实践探索，进行更全面的开源开放，非常欢迎从事相关领域的伙伴们提供更多、更丰富的对比实验和实际应用案例，让我们共同推进自然语言处理技术在教育领域的应用和发展，为中国的教育事业注入新的动能。
 
 
-**参考文献**：
-[1] Devlin, Jacob, et al. "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
-[2] Liu, Yinhan, et al. "Roberta: A robustly optimized BERT pretraining approach." arXiv preprint arXiv:1907.11692 (2019).
-[3] Huang, Gale Yan, et al. "Neural Multi-Task Learning for Teacher Question Detection in Online Classrooms." International Conference on Artificial Intelligence in Education. Springer, Cham, 2020. 
-[4] Xu, Shiting, Wenbiao Ding, and Zitao Liu. "Automatic Dialogic Instruction Detection for K-12 Online One-on-one Classes." International Conference on Artificial Intelligence in Education. Springer, Cham, 2020.
+## 参考文献：
+    [1] Devlin, Jacob, et al. "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding." Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.
+    [2] Liu, Yinhan, et al. "Roberta: A robustly optimized BERT pretraining approach." arXiv preprint arXiv:1907.11692 (2019).
+    [3] Huang, Gale Yan, et al. "Neural Multi-Task Learning for Teacher Question Detection in Online Classrooms." International Conference on Artificial Intelligence in Education. Springer, Cham, 2020. 
+    [4] Xu, Shiting, Wenbiao Ding, and Zitao Liu. "Automatic Dialogic Instruction Detection for K-12 Online One-on-one Classes." International Conference on Artificial Intelligence in Education. Springer, Cham, 2020.
 
