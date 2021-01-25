@@ -17,7 +17,9 @@
 ### 2. 模型下载
 
 下载地址：
+
 pytorch版：[https://ai.100tal.com/download/TAL-EduBERT.zip](https://ai.100tal.com/download/TAL-EduBERT.zip)
+
 tensorflow版：[https://ai.100tal.com/download/TAL-EduBERT-TF.zip](https://ai.100tal.com/download/TAL-EduBERT-TF.zip)
 
 
