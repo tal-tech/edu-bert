@@ -1,4 +1,5 @@
-export MODEL_PATH=../../path_to_EduBERT
+export MODEL_PATH=../../path_to_EduBERT # 如果需要加载tensorflow模型，模型文件夹名需要以.cpkt结尾，如下面一行所示
+#export MODEL_PATH=../edu-bert.ckpt #加载tensorflow模型的文件夹名称样例
 export DATA_DIR=../data/
 export TASK_NAME=CoLA
 python ../src/finetune.py \
